@@ -9,6 +9,7 @@ import Todo from '../images/icon-todo.svg'
 import Calendar from '../images/icon-calendar.svg'
 import Reminder from '../images/icon-reminders.svg'
 import Planning from '../images/icon-planning.svg'
+import { Container } from '../App'
 
 const Header = () => {
 
@@ -91,7 +92,6 @@ const Panel = styled.div`
     width:85vw;
     height:2rem;
     margin:25px 0;
-    /* padding:25px; */
     /* border:1px solid red; */
     }
 `
@@ -130,11 +130,12 @@ const Botones = styled.div`
       border: 1.5px solid hsl(0, 0%, 9%);
     }
   }
-  @media screen and (min-width: 836px) {
-    /* width:0%; */
+  @media screen and (min-width: 836px){
+    border:1px solid red;
     flex-direction: row;
     float: right;
-    margin: 0 35rem;
+    margin: 0 18vw;
+    border:none;
     .loginbtn {
       padding: 12px 25px;
       color: hsl(0, 0%, 41%);
@@ -148,6 +149,9 @@ const Botones = styled.div`
       width: 8rem;
       margin: 0;
     }
+    }
+  @media screen and (min-width: 1300px) {
+    margin: 0 35vw;
   }
 `;
 
