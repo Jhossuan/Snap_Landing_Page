@@ -52,9 +52,9 @@ const MobileImg = styled.img`
 `
 
 const DesktopImg = styled.img`
-width:25rem;
+width:28vw;
 float:right;
-margin:0 5rem 5rem 0;
+margin:0 5rem 0 0;
     @media screen and (max-width: 836px){
     display:none;
   }
