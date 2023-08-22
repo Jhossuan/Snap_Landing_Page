@@ -9,7 +9,6 @@ import Todo from '../images/icon-todo.svg'
 import Calendar from '../images/icon-calendar.svg'
 import Reminder from '../images/icon-reminders.svg'
 import Planning from '../images/icon-planning.svg'
-s
 const Header = () => {
 
 const [active, setActive] = useState(true)
