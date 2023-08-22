@@ -14,8 +14,8 @@ jobs:
 
     - name: 🔨 Obtener el build
       run: |
-        yarn install
-        yarn build-win
+        npm install
+        npm run build
     
     - name: 📂 Sincronización de archivos
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
