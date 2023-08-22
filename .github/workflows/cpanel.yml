@@ -1,0 +1,27 @@
+name: 🚀 Deploy en CPanel
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 🚚 Checkout del código fuente
+      uses: actions/checkout@v3
+
+    - name: 🔨 Obtener el build
+      run: |
+        yarn install
+        yarn build-win
+    
+    - name: 📂 Sincronización de archivos
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ftp.xn--daos-punitivos-rnb.org
+        username: prueba_deploy@xn--daos-punitivos-rnb.org
+        password: "#Passw0rd."
+        protocol: ftps
+        local-dir: ./build/
