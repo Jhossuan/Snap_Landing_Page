@@ -9,12 +9,12 @@ pipeline {
         }
         stage('Hello 2') {
             steps {
-                echo 'Hello World'
+                echo 'Muestra desde el repositorio de github'
             }
         }
         stage('Hello 3') {
             steps {
-                echo 'Hello World'
+                echo 'Probando Jenkins'
             }
         }
     }
