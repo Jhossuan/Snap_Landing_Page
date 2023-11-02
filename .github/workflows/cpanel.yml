@@ -3,7 +3,7 @@ name: 🚀 Deploy en CPanel
 on:
   push:
     branches:
-      - main
+      - aqui va la rama que queremos
 jobs:
   deploy:
     runs-on: ubuntu-latest
